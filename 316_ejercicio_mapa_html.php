@@ -4,10 +4,10 @@ $img = '';
 //bucle 10 veces
 for($i=0; $i<10; $i++){
 	//generar numero aleatorio coordenada top
-	$top = rand(0, 480);
+	$top = rand(0, 430);
 	
 	//generar numero aleatorio coordenada left
-	$left = rand(0, 725);
+	$left = rand(0, 675);
 
 	//confeccionar una etiqueta img con las coordenadas top y left
 	$img .= "<img src='goldCoin.png' style='top:$top;left:$left;'>";
@@ -19,7 +19,7 @@ for($i=0; $i<10; $i++){
 <head>
 	<title></title>
 	<style>
-		div {width:725px; height:483px; background: url(img/Bluemap.jpg); margin:auto; overflow:hidden; position:relative}
+		div {width:725px; height:483px; background: url(Bluemap.jpg); margin:auto; overflow:hidden; position:relative}
 		
 		img {width:50px;position:absolute;}
 	</style>
