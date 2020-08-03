@@ -1,13 +1,18 @@
 <?php
 //crear var donde guardar las etiquetas img
-
+$img = '';
 //bucle 10 veces
-
+for($i=0; $i<10; $i++){
 	//generar numero aleatorio coordenada top
+	$top = rand(0, 480);
 	
 	//generar numero aleatorio coordenada left
+	$left = rand(0, 725);
 
 	//confeccionar una etiqueta img con las coordenadas top y left
+	$img .= "<img src='goldCoin.png' style='top:$top;left:$left;'>";
+}
+	
 
 ?>
 <html>
@@ -21,7 +26,7 @@
 </head>
 <body>
 	<div>
-		
+		<?=$img?>
 	</div>
 </body>
 </html>
